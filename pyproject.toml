@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "End-to-end monthly sales forecasting for every shop/item pair across a multi-store retail chain."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 dependencies = [
     "numpy>=1.26",
     "pandas>=2.1",

@@ -242,3 +242,7 @@ GitHub Actions runs `ruff` and `pytest` on Python 3.11 and 3.12, then builds the
 - **Grid mismatch:** training rows come from items that sold, while forecast rows cover every pair. Sampling extra non-selling pairs into training would close this gap.
 - **Uncertainty:** forecasts are point estimates. Quantile objectives would give stock-planning intervals.
 - **Retraining:** retraining is manual. The drift report is designed to be the trigger in a scheduled job.
+
+## License
+
+Released under the [Apache License 2.0](LICENSE).
