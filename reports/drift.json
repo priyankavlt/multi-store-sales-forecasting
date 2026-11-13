@@ -1,0 +1,389 @@
+{
+  "reference_month": 33,
+  "current_month": 34,
+  "thresholds": {
+    "psi_warning": 0.1,
+    "psi_alert": 0.25,
+    "mean_shift_warning": 0.25,
+    "mean_shift_alert": 0.5
+  },
+  "n_alert": 3,
+  "n_warning": 0,
+  "features": [
+    {
+      "feature": "item_avg_cnt_lag_1",
+      "psi": 0.6077,
+      "missing_rate_change": -0.036,
+      "status": "alert"
+    },
+    {
+      "feature": "item_avg_cnt_lag_2",
+      "psi": 0.5474,
+      "missing_rate_change": 0.002,
+      "status": "alert"
+    },
+    {
+      "feature": "shop_item_cnt_trend",
+      "psi": 0.0403,
+      "missing_rate_change": -0.0869,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_lag_1",
+      "psi": 0.0395,
+      "missing_rate_change": -0.0869,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_mean_3",
+      "psi": 0.0352,
+      "missing_rate_change": -0.071,
+      "status": "ok"
+    },
+    {
+      "feature": "city_item_avg_cnt_lag_2",
+      "psi": 0.0263,
+      "missing_rate_change": 0.002,
+      "status": "ok"
+    },
+    {
+      "feature": "item_age",
+      "psi": 0.0173,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_price_delta",
+      "psi": 0.015,
+      "missing_rate_change": -0.0166,
+      "status": "ok"
+    },
+    {
+      "feature": "item_price_rel_cat",
+      "psi": 0.0129,
+      "missing_rate_change": -0.0168,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_type_code",
+      "psi": 0.0124,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_id",
+      "psi": 0.0112,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_price_last",
+      "psi": 0.0109,
+      "missing_rate_change": -0.0166,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_subtype_code",
+      "psi": 0.01,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "city_item_avg_cnt_lag_1",
+      "psi": 0.0084,
+      "missing_rate_change": -0.036,
+      "status": "ok"
+    },
+    {
+      "feature": "item_months_since_sale",
+      "psi": 0.0078,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_avg_cnt_lag_3",
+      "psi": 0.0074,
+      "missing_rate_change": 0.009,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_city_code",
+      "psi": 0.007,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_age",
+      "psi": 0.0064,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_category_id",
+      "psi": 0.006,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_months_since_sale",
+      "psi": 0.0058,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_name_group_code",
+      "psi": 0.0056,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_family_code",
+      "psi": 0.0052,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_lag_2",
+      "psi": 0.0051,
+      "missing_rate_change": -0.0297,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_lag_3",
+      "psi": 0.0034,
+      "missing_rate_change": -0.0217,
+      "status": "ok"
+    },
+    {
+      "feature": "city_item_avg_cnt_lag_3",
+      "psi": 0.0027,
+      "missing_rate_change": 0.009,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_lag_12",
+      "psi": 0.0021,
+      "missing_rate_change": -0.0005,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_cnt_lag_6",
+      "psi": 0.0005,
+      "missing_rate_change": 0.0036,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_is_digital",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_is_digital",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_is_online",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_is_new",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_item_is_new",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    },
+    {
+      "feature": "item_is_preorder",
+      "psi": 0.0,
+      "missing_rate_change": 0.0,
+      "status": "ok"
+    }
+  ],
+  "group_level_features": [
+    {
+      "feature": "shop_revenue_trend",
+      "reference_mean": 0.2357,
+      "current_mean": 0.0641,
+      "relative_change": 0.728,
+      "status": "alert"
+    },
+    {
+      "feature": "name_group_avg_cnt_lag_3",
+      "reference_mean": 0.2571,
+      "current_mean": 0.2946,
+      "relative_change": 0.1457,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_3",
+      "reference_mean": 0.2568,
+      "current_mean": 0.2926,
+      "relative_change": 0.1393,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_avg_cnt_lag_3",
+      "reference_mean": 0.2576,
+      "current_mean": 0.2906,
+      "relative_change": 0.1281,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_avg_cnt_lag_3",
+      "reference_mean": 0.2586,
+      "current_mean": 0.2897,
+      "relative_change": 0.1205,
+      "status": "ok"
+    },
+    {
+      "feature": "city_avg_cnt_lag_3",
+      "reference_mean": 0.259,
+      "current_mean": 0.2888,
+      "relative_change": 0.1148,
+      "status": "ok"
+    },
+    {
+      "feature": "month_avg_cnt_lag_3",
+      "reference_mean": 0.2592,
+      "current_mean": 0.288,
+      "relative_change": 0.1109,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_family_avg_cnt_lag_3",
+      "reference_mean": 0.2581,
+      "current_mean": 0.2864,
+      "relative_change": 0.1099,
+      "status": "ok"
+    },
+    {
+      "feature": "city_avg_cnt_lag_2",
+      "reference_mean": 0.2928,
+      "current_mean": 0.2607,
+      "relative_change": 0.1097,
+      "status": "ok"
+    },
+    {
+      "feature": "family_avg_cnt_lag_3",
+      "reference_mean": 0.2598,
+      "current_mean": 0.2838,
+      "relative_change": 0.0924,
+      "status": "ok"
+    },
+    {
+      "feature": "family_avg_cnt_lag_2",
+      "reference_mean": 0.2811,
+      "current_mean": 0.2568,
+      "relative_change": 0.0867,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_avg_cnt_lag_1",
+      "reference_mean": 0.2509,
+      "current_mean": 0.272,
+      "relative_change": 0.0842,
+      "status": "ok"
+    },
+    {
+      "feature": "month_avg_cnt_lag_2",
+      "reference_mean": 0.288,
+      "current_mean": 0.2638,
+      "relative_change": 0.0841,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_avg_cnt_lag_1",
+      "reference_mean": 0.2738,
+      "current_mean": 0.2514,
+      "relative_change": 0.0817,
+      "status": "ok"
+    },
+    {
+      "feature": "name_group_avg_cnt_lag_2",
+      "reference_mean": 0.285,
+      "current_mean": 0.2675,
+      "relative_change": 0.0615,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_family_avg_cnt_lag_2",
+      "reference_mean": 0.2839,
+      "current_mean": 0.2665,
+      "relative_change": 0.0613,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_avg_cnt_lag_2",
+      "reference_mean": 0.2906,
+      "current_mean": 0.2738,
+      "relative_change": 0.0581,
+      "status": "ok"
+    },
+    {
+      "feature": "city_avg_cnt_lag_1",
+      "reference_mean": 0.266,
+      "current_mean": 0.2518,
+      "relative_change": 0.0535,
+      "status": "ok"
+    },
+    {
+      "feature": "cat_avg_cnt_lag_2",
+      "reference_mean": 0.2776,
+      "current_mean": 0.2652,
+      "relative_change": 0.0448,
+      "status": "ok"
+    },
+    {
+      "feature": "name_group_avg_cnt_lag_1",
+      "reference_mean": 0.2589,
+      "current_mean": 0.2691,
+      "relative_change": 0.0393,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_family_avg_cnt_lag_1",
+      "reference_mean": 0.263,
+      "current_mean": 0.2552,
+      "relative_change": 0.0297,
+      "status": "ok"
+    },
+    {
+      "feature": "family_avg_cnt_lag_1",
+      "reference_mean": 0.2535,
+      "current_mean": 0.2608,
+      "relative_change": 0.0292,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_1",
+      "reference_mean": 0.2604,
+      "current_mean": 0.2671,
+      "relative_change": 0.0255,
+      "status": "ok"
+    },
+    {
+      "feature": "month_avg_cnt_lag_1",
+      "reference_mean": 0.2638,
+      "current_mean": 0.2586,
+      "relative_change": 0.0197,
+      "status": "ok"
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_2",
+      "reference_mean": 0.2803,
+      "current_mean": 0.2753,
+      "relative_change": 0.0178,
+      "status": "ok"
+    }
+  ]
+}
