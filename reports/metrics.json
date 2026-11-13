@@ -1,0 +1,246 @@
+{
+  "run_id": "20261112T163337Z",
+  "validation_month": 33,
+  "best_iteration": 232,
+  "metrics": {
+    "Zero": {
+      "rmse": 1.1652054223761361,
+      "mae": 0.25856523856708596,
+      "bias": -0.25856523856708596,
+      "r2": -0.0517923089761092,
+      "total_actual": 61583.0,
+      "total_predicted": 0.0
+    },
+    "Last month": {
+      "rmse": 1.1358170090812756,
+      "mae": 0.30185328250172144,
+      "bias": -0.031216935659943233,
+      "r2": 0.0005945051650034783,
+      "total_actual": 61583.0,
+      "total_predicted": 54148.0
+    },
+    "3-month average": {
+      "rmse": 1.0992287419429032,
+      "mae": 0.3125479356846635,
+      "bias": 0.004434472259598973,
+      "r2": 0.06394547321612676,
+      "total_actual": 61583.0,
+      "total_predicted": 62639.16712701321
+    },
+    "Ridge regression": {
+      "rmse": 0.9525394599834536,
+      "mae": 0.3616923474656548,
+      "bias": 0.05384806528829624,
+      "r2": 0.2971041996464404,
+      "total_actual": 61583.0,
+      "total_predicted": 74408.10140584409
+    },
+    "LightGBM": {
+      "rmse": 0.8666312163276703,
+      "mae": 0.3044779154524245,
+      "bias": 0.022662313138294077,
+      "r2": 0.41817329127510094,
+      "total_actual": 61583.0,
+      "total_predicted": 66980.52844477378
+    }
+  },
+  "lift_vs_best_baseline": 0.0901886454733073,
+  "rmse_by_category_family": [
+    {
+      "segment": "Movies",
+      "rows": 57596.0,
+      "rmse": 0.6608,
+      "actual_units": 12917.0,
+      "predicted_units": 11740.4572
+    },
+    {
+      "segment": "Gifts",
+      "rows": 51788.0,
+      "rmse": 0.89,
+      "actual_units": 12290.0,
+      "predicted_units": 14420.6866
+    },
+    {
+      "segment": "Games",
+      "rows": 46508.0,
+      "rmse": 1.2481,
+      "actual_units": 19327.0,
+      "predicted_units": 23958.7255
+    },
+    {
+      "segment": "Music",
+      "rows": 46332.0,
+      "rmse": 0.4534,
+      "actual_units": 6811.0,
+      "predicted_units": 7302.7646
+    },
+    {
+      "segment": "Books",
+      "rows": 19008.0,
+      "rmse": 1.086,
+      "actual_units": 5226.0,
+      "predicted_units": 3642.0881
+    },
+    {
+      "segment": "Software",
+      "rows": 10076.0,
+      "rmse": 0.4194,
+      "actual_units": 1265.0,
+      "predicted_units": 1512.4943
+    },
+    {
+      "segment": "Accessories",
+      "rows": 3784.0,
+      "rmse": 0.8826,
+      "actual_units": 1565.0,
+      "predicted_units": 1849.2334
+    },
+    {
+      "segment": "Game consoles",
+      "rows": 1716.0,
+      "rmse": 0.5925,
+      "actual_units": 288.0,
+      "predicted_units": 577.5062
+    },
+    {
+      "segment": "Payment cards",
+      "rows": 660.0,
+      "rmse": 1.4833,
+      "actual_units": 943.0,
+      "predicted_units": 971.686
+    },
+    {
+      "segment": "Delivery",
+      "rows": 440.0,
+      "rmse": 0.724,
+      "actual_units": 139.0,
+      "predicted_units": 163.0566
+    },
+    {
+      "segment": "Batteries",
+      "rows": 176.0,
+      "rmse": 1.9825,
+      "actual_units": 348.0,
+      "predicted_units": 319.0166
+    },
+    {
+      "segment": "Service",
+      "rows": 44.0,
+      "rmse": 3.723,
+      "actual_units": 464.0,
+      "predicted_units": 520.2247
+    },
+    {
+      "segment": "Tickets",
+      "rows": 44.0,
+      "rmse": 0.3359,
+      "actual_units": 0.0,
+      "predicted_units": 2.5886
+    }
+  ],
+  "rmse_by_item_history": [
+    {
+      "segment": "Previously sold in shop",
+      "rows": 117076.0,
+      "rmse": 0.8503,
+      "actual_units": 44227.0,
+      "predicted_units": 47414.4408
+    },
+    {
+      "segment": "Known item, new to shop",
+      "rows": 100196.0,
+      "rmse": 0.6227,
+      "actual_units": 7650.0,
+      "predicted_units": 8924.8617
+    },
+    {
+      "segment": "New item",
+      "rows": 20900.0,
+      "rmse": 1.6278,
+      "actual_units": 9706.0,
+      "predicted_units": 10641.226
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "shop_item_cnt_lag_1",
+      "gain_share": 0.3531
+    },
+    {
+      "feature": "shop_item_cnt_mean_3",
+      "gain_share": 0.1687
+    },
+    {
+      "feature": "item_avg_cnt_lag_1",
+      "gain_share": 0.04
+    },
+    {
+      "feature": "item_category_id",
+      "gain_share": 0.0306
+    },
+    {
+      "feature": "item_price_last",
+      "gain_share": 0.026
+    },
+    {
+      "feature": "item_name_group_code",
+      "gain_share": 0.0244
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_1",
+      "gain_share": 0.02
+    },
+    {
+      "feature": "shop_id",
+      "gain_share": 0.0189
+    },
+    {
+      "feature": "item_age",
+      "gain_share": 0.0188
+    },
+    {
+      "feature": "month_of_year",
+      "gain_share": 0.0172
+    },
+    {
+      "feature": "item_price_rel_cat",
+      "gain_share": 0.0172
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_2",
+      "gain_share": 0.0156
+    },
+    {
+      "feature": "shop_cat_avg_cnt_lag_3",
+      "gain_share": 0.0144
+    },
+    {
+      "feature": "name_group_avg_cnt_lag_1",
+      "gain_share": 0.0138
+    },
+    {
+      "feature": "cat_avg_cnt_lag_2",
+      "gain_share": 0.0116
+    },
+    {
+      "feature": "city_item_avg_cnt_lag_1",
+      "gain_share": 0.0114
+    },
+    {
+      "feature": "cat_subtype_code",
+      "gain_share": 0.0113
+    },
+    {
+      "feature": "shop_item_cnt_lag_3",
+      "gain_share": 0.0105
+    },
+    {
+      "feature": "cat_avg_cnt_lag_1",
+      "gain_share": 0.0102
+    },
+    {
+      "feature": "cat_avg_cnt_lag_3",
+      "gain_share": 0.0101
+    }
+  ]
+}

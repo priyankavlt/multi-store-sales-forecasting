@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "sales: 6 exact duplicate sales rows",
+    "sales: 1 rows with non-positive price",
+    "sales: 1 rows with extreme daily quantity",
+    "sales: 1 rows with extreme price"
+  ],
+  "stats": {
+    "sales_rows": 2935849,
+    "months": 34,
+    "first_date": "2013-01-01",
+    "last_date": "2015-10-31",
+    "shops": 60,
+    "items": 21807,
+    "duplicate_rows": 6,
+    "non_positive_price_rows": 1,
+    "return_rows": 7356,
+    "forecast_pairs": 214200,
+    "forecast_shops": 42,
+    "forecast_items": 5100,
+    "forecast_items_never_sold": 363
+  }
+}

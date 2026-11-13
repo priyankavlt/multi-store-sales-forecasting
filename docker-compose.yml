@@ -1,0 +1,31 @@
+x-app: &app
+  build: .
+  image: salesforecast:latest
+  volumes:
+    - ./data:/app/data
+    - ./artifacts:/app/artifacts
+    - ./reports:/app/reports
+
+services:
+  # One-off: download -> validate -> features -> train -> predict -> monitor
+  pipeline:
+    <<: *app
+    command: ["salesforecast", "all"]
+    profiles: ["pipeline"]
+    healthcheck:
+      disable: true
+
+  api:
+    <<: *app
+    ports:
+      - "8000:8000"
+
+  dashboard:
+    <<: *app
+    command: ["streamlit", "run", "app/dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    ports:
+      - "8501:8501"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 5s
