@@ -10,8 +10,8 @@ venv/
 htmlcov/
 
 # Data and model artifacts (reproducible with `make pipeline`)
-data/
-artifacts/
+/data/
+/artifacts/
 
 # Notebooks / OS / editors
 .ipynb_checkpoints/
